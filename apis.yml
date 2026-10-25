@@ -1,25 +1,79 @@
 aid: portto-com
+
 name: Blocto
-description: 'Blocto is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by 500-global) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://ik.imagekit.io/judimpo/join-game-judimpo.png?updatedAt=1775356285813
+
+description: Blocto is a blockchain wallet and developer platform that enables users to manage digital assets across multiple blockchains and
+  interact with decentralized applications (dApps) through a unified interface. Founded in 2020, Blocto provides SDKs, APIs, and tools for developers
+  to integrate wallet functionality, token management, and transaction signing into their applications, supporting chains such as Solana, Ethereum,
+  Polygon, and more. The platform emphasizes a seamless user experience, cross-chain compatibility, and security features for both consumers and
+  enterprises.
+
 url: https://raw.githubusercontent.com/api-evangelist/portto-com/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-25'
+
 modified: '2026-10-25'
+
 tags:
 - Company
-apis: []
+- Blockchain
+- Wallet
+- DeveloperPlatform
+- Crypto
+- dApp
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- 500-global
+
 common:
+- type: WellKnown
+  url: well-known/portto-com-well-known.yml
+- type: Hosts
+  url: hosts/portto-com-hosts.yml
+- type: Vendors
+  url: vendors/portto-com-vendors.yml
+- type: Support
+  url: https://support.portto.com/hc/en-us
+- type: DomainSecurity
+  url: security/portto-com-domain-security.yml
 - type: Website
   url: https://portto.com
+
+apis:
+- name: Blocto API
+  description: Blocto provides SDKs and wallet services for developers to integrate blockchain functionality.
+  humanURL: https://docs.blocto.app
+  baseURL: null
+  aid: portto-com:blocto-api
+
+x-backed-by:
+- 500-global
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Documentation is served as markdown via a GitBook site requiring query parameters for content, with no machine‑readable OpenAPI spec.
+  evidence:
+  - url: https://docs.blocto.app/openapi.json
+    status: 200
+  checked: '2026-10-25'
+x-enrichment:
+  date: '2026-10-25'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

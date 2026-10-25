@@ -1,0 +1,22 @@
+generated: '2026-10-25'
+method: none
+source:
+- https://zapier.com/apps/portto-com/integrations
+- https://zapier.com/apps/portto/integrations
+- https://zapier.com/apps/blocto/integrations
+- https://n8n.io/integrations/portto-com/
+- https://n8n.io/integrations/portto/
+- https://composio.dev/toolkits/portto-com
+- https://monid.ai/tools/portto-com
+checked:
+- https://composio.dev/toolkits/portto-com
+- https://monid.ai/tools/portto-com
+- https://n8n.io/integrations/portto-com/
+- https://n8n.io/integrations/portto/
+- https://zapier.com/apps/blocto/integrations
+- https://zapier.com/apps/portto-com/integrations
+- https://zapier.com/apps/portto/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
